@@ -1,0 +1,113 @@
+body {
+  background-image: url(https://images.unsplash.com/photo-1550613097-fe6c2c321cd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+svg {
+  position: absolute;
+}
+.wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+#sec01 {
+  padding: 40px 0;
+}
+.card-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  h1 {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 0.2em;
+    margin: 0;
+  }
+  p {
+    font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    width: 360px;
+  }
+  img {
+    width: 400px;
+    height: auto;
+    filter: url(#warp);
+  }
+  .inner {
+    background-color: rgba(black, 0.5);
+    padding: 60px 20px;
+    margin: 40px 0;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    &-02 {
+      img {
+        order: 2;
+      }
+      div {
+        align-items: flex-end;
+        text-align: right;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 4px solid #000;
+  background-color: rgba(black, 0.5);
+  background-size: cover;
+  background-position: center;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: white;
+}
+.nav-list-wrapper {
+  overflow: hidden;
+  display: flex;
+  .nav-list-item {
+    width: 20%;
+    background-color: rgba(black, 0.5);
+    display: flex;
+    transition: background-color 0.2s ease-in-out;
+    padding: 100px 0;
+    &:hover {
+      background-color: rgba(black, 0.7);
+    }
+    ul {
+      list-style: none;
+      margin: auto 0 auto 40px;
+      padding: 0;
+      ul {
+        margin: 20px 0 0 0;
+      }
+    }
+    li {
+      font-family: 'Teko', sans-serif;
+      margin: 0 0 15px 0;
+      font-size: 24px;
+      li {
+        font-size: 16px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}

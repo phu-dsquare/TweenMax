@@ -141,6 +141,7 @@ var hoverMouse = function ($el) {
         ease: Power2.easeOut
       });
     };
+    
     var onLeave = function () {
       TweenMax.to($self, 0.7, {
         x: 0,

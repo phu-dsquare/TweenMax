@@ -4,7 +4,7 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 10;
+  z-index: 101;
   &__menu {
     width: 30px;
     // height: 20px;
@@ -40,6 +40,7 @@
   }
 }
 .menu-toggle {
+  font-family: 'Teko', sans-serif;
   background-color: #000;
   position: fixed;
   top: 0;
@@ -48,13 +49,19 @@
   height: 100%;
   display: none;
   text-align: center;
+  z-index: 100;
   color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
   ul {
     padding-top: 70px;
     li {
+      margin-top: 10px;
       list-style: none;
       a {
         display: block;
+        text-decoration: none;
         padding: 10px 0;
         color: inherit;
       }
