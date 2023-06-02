@@ -1,0 +1,21 @@
+// DISPLAY ================================
+.d {
+  &-block {
+    display: block !important;
+  }
+  &-flex {
+    display: flex !important;
+  }
+}
+.only {
+  &-pc {
+    @include sp {
+      display: none;
+    }
+  }
+  &-sp {
+    @include pc {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+body {
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: #000;
+}
+
+main section {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main section#sec01 {
+  background-color: purple;
+  height: 700px;
+}
+main section#sec02 {
+  background-color: green;
+}
+main section#sec03 {
+  background-color: yellow;
+}
+main section#sec04 {
+  background-color: red;
+}
+main section#sec05 {
+  background-color: pink;
+}
+main .btn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  background: coral;
+  color: #fff;
+}
+main .btn--circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+main .text-animation {
+  position: relative;
+  color: #fff;
+}
+main .text-animation span {
+  position: relative;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+}
+main .scroll-animation {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+main .scroll-animation .img-animation {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+#animation {
+  background: #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 50px auto;
+  position: relative;
+}
+#animation i {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,77 @@
+/* SLICK */
+/* Arrows */
+.slick-arrow {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(26);
+    height: rem(36);
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    outline: none;
+    z-index: 1;
+    &:hover, &:focus {
+        opacity: 0.7;
+    }
+    &.slick-prev {
+        background-image: url('../img/shared/prev.png');
+        left: 10px;
+    }
+    &.slick-next {
+        background-image: url('../img/shared/next.png');
+        right: 10px;
+    }
+}
+/* Dots */
+.slick-dots {
+    padding: 0;
+    margin: rem(20) 0 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    text-align: center;
+  
+    li {
+        position: relative;
+        height: rem(13);
+        width: rem(13);
+        margin: 0 rem(6);
+        cursor: pointer;
+  
+        button {
+            background-color: #000;
+            border: 0;
+            display: block;
+            transition: all ease 0.3s;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            padding: 0;
+            color: transparent;
+            opacity: 0.5;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &.slick-active {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+}

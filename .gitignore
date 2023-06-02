@@ -1,0 +1,11 @@
+
+# system, plugins, etc.
+.DS_Store
+.history
+.vscode
+.cache
+node_modules
+package-lock.json
+
+# code
+*.map

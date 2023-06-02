@@ -1,0 +1,38 @@
+// TEXT ================================
+.text {  // inline
+  &-underline {
+    text-decoration: underline;
+  }
+  &-line-through {
+    text-decoration: line-through;
+  }
+  &-no-underline {
+    text-decoration: none;
+  }
+  // align
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  // weight
+  &-300 {
+    font-weight: 300;
+  }
+  &-400 {
+    font-weight: 400;
+  }
+  &-500 {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700 {
+    font-weight: 700;
+  }
+}

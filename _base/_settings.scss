@@ -1,0 +1,12 @@
+// design settings
+$design-pc--width: 1500;
+$design-sp--width: 750;
+
+// font size (browser default font-size: 16px; => 1em = 16px)
+$font-size-default: 16;
+$font-family-default: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック" , "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+
+// breakpoints
+$breakpoint-sp: 750px; //max 750px
+$breakpoint-pc--start: 751px; // min 751
+$breakpoint-pc--end: 1280px; // max 1280

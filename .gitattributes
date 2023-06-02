@@ -1,0 +1,19 @@
+# system, plugins, etc.
+.git export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.DS_Store export-ignore
+.history export-ignore
+.vscode export-ignore
+node_modules export-ignore
+package-lock.json export-ignore
+README.md export-ignore
+*.example export-ignore
+
+# source code
+_base export-ignore
+*.map export-ignore
+*.sass export-ignore
+*.scss export-ignore
+*.less export-ignore
+*.pug export-ignore

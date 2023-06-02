@@ -1,0 +1,16 @@
+/* default settings */
+@import "../../_base/settings";
+@import "../../_base/mixin-function";
+
+/* reset browser (chrome, safari, firefox, ie, edge)
+/* only for new website (remove if you are updating for other website)
+@import "reset";
+/* =================================================================== */
+@import "reset";
+// common
+@import "text";
+@import "display";
+@import "button";
+@import "form";
+@import "header";
+@import "footer";

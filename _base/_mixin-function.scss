@@ -1,0 +1,37 @@
+@mixin placehoder() {
+  &::-webkit-input-placeholder /* Chrome/Opera/Safari */
+    { @content; }
+  &::-moz-placeholder /* Firefox 19+ */
+    { @content; }
+  &:-ms-input-placeholder /* IE 10+ */
+    { @content; }
+  &:-moz-placeholder /* Firefox 18- */
+    { @content; }
+}
+    
+// responsive
+@mixin pc() {
+  @media ( min-width: $breakpoint-pc--start )
+    { @content; }
+}
+@mixin sp()
+{
+  @media ( max-width: $breakpoint-sp )
+    { @content; }
+}
+  
+// scale size pc
+@function size-pc($size) {
+  $result: ($size / $design-pc--width * 100);
+  @return $result + vw;
+}
+// scale size sp
+@function size-sp($size) {
+  $result: ($size / $design-sp--width * 100);
+  @return $result + vw;
+}
+// convert size px -> rem
+@function rem($size) {
+  $result: $size / $font-size-default;
+  @return $result + rem;
+}
